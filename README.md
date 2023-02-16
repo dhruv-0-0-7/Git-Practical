@@ -140,3 +140,13 @@ git commit -m "Change2 in feature2 Branch"
 git add file3.txt
 git commit -m "Change3 in feature2 Branch"
 ```
+
+![Git Log Image-1](./Practical4/Image1.png)
+
+```bash
+git switch main
+
+# Here b329ff0 is the CommitId of the Commit, we want to Cherry-Pick
+git cherrypick b329ff0
+```
+![Git Log Image-2](./Practical4/Image2.png)
