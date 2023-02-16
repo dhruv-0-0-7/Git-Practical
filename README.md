@@ -150,3 +150,18 @@ git switch main
 git cherrypick b329ff0
 ```
 ![Git Log Image-2](./Practical4/Image2.png)
+
+### (5) Drop Commit
+
+- To Drop a Commit, we can use Interactive Rebasing. We can use `drop` option for particular commit to drop it. And again Interactive rebasing will rewrite commit history.
+
+- Drop commit on feature3 Branch
+
+```bash
+# Created feature3 Branch with 3 commits
+# Switch to feature3 Branch
+git switch feature3
+
+# Use Interactive Rebase
+git rebase -i 
+```
