@@ -89,6 +89,8 @@ git rebase main
 
 - To change last Commit's Message we can use `--amend` option in `git commit` and provide a new message with `-m` option. Amend operation is used to append changes to last Commit instead of creating a new commit.
 
+- Changing Commit message
+
 ```bash
 # Made some changes and Creating commit
 git add .
@@ -119,3 +121,22 @@ git commit --amend -m "Changed message by Amending Last Commit"
 ```
 
 ![Git Log Image-3](./Practical3/Image6.png)
+
+### (4) Cherry-Pick
+
+- Cherry Pick is used to take certain changes from another branch and apply them with current branch without Merging whole branches. we use `git cherry-pick` command to perform this operation. This will create a new Commit with the combined changes of Last commit of Current Branch and Cherry-Picked commit from another branch.
+
+```bash
+git branch feature2
+git switch feature2
+
+# Made some changes and creating few commits
+git add file1.txt
+git commit -m "Change1 in feature2 Branch"
+
+git add file2.txt
+git commit -m "Change2 in feature2 Branch"
+
+git add file3.txt
+git commit -m "Change3 in feature2 Branch"
+```
