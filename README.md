@@ -70,3 +70,15 @@ git add .
 git commit -m "Some changes in Branch feature"
 
 ```
+
+![Git Log Image-1](./Practical2/Image1.png)
+
+```bash
+# Performing Rebase operation
+# Switch to feature branch
+git switch feature
+
+# Rebase with Branch main
+git rebase main
+```
+![Git Log Image-2](./Practical2/Image2.png)
