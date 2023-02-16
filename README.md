@@ -94,3 +94,28 @@ git rebase main
 git add .
 git commit -m "Commit message should be changed"
 ```
+
+![Git Log Image-1](./Practical3/Image1.png)
+
+```bash
+# For Interactive rebasing
+git rebase -i HEAD~1
+```
+
+![Git Rebase Prompt-1](./Practical3/Image2.png)
+
+
+![Git Rebase Prompt-2](./Practical3/Image3.png)
+
+
+![Git Rebase Prompt-3](./Practical3/Image4.png)
+
+
+![Git Log Image-2](./Practical3/Image5.png)
+
+```bash
+# To Amend last Commit
+git commit --amend -m "Changed message by Amending Last Commit"
+```
+
+![Git Log Image-3](./Practical3/Image6.png)
