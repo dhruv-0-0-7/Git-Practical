@@ -1,1 +1,2 @@
 Some changes in Branch feature
+Change in Branch feature2
