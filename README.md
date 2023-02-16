@@ -161,7 +161,19 @@ git cherrypick b329ff0
 # Created feature3 Branch with 3 commits
 # Switch to feature3 Branch
 git switch feature3
-
-# Use Interactive Rebase
-git rebase -i 
 ```
+
+![Git Log Image-1](./Practical5/Image1.png)
+
+```bash
+# Interactive Rebasing (To delete 2nd Commit in feature3 Branch)
+git rebase -i 4da51b9^
+# OR
+git rebase -i 9be89fb
+# OR
+git rebase -i HEAD~2
+```
+
+![Git Rebase prompt-1](./Practical5/Image2.png)
+
+![Git Log Image-2](./Practical5/Image3.png)
