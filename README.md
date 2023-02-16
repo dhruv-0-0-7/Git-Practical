@@ -82,3 +82,15 @@ git switch feature
 git rebase main
 ```
 ![Git Log Image-2](./Practical2/Image2.png)
+
+### (3) Change Commit Message
+
+- To change Commit Message we can perform Interactive Rebasing. We can use option `reword` for particular commit Id to change its Message. We use `git rebase -i` command for Interactive Rebasing. Changing Commit Message is one of the Operations that will *rewrite* the Commit History. So, after changing Commit Message, we'll be required to Push our Changes **forcefully** if the commits we edited were already on Remote Repository. Also, the commits we edit are already cloned by other team members then, Rewriting the Commit history will require for them to Pull new changes before they push their changes on Remote Repository. This way we can change any Commit's Message.
+
+- To change last Commit's Message we can use `--amend` option in `git commit` and provide a new message with `-m` option. Amend operation is used to append changes to last Commit instead of creating a new commit.
+
+```bash
+# Made some changes and Creating commit
+git add .
+git commit -m "Commit message should be changed"
+```
