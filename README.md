@@ -42,3 +42,31 @@ Remote Repository Scenario,
 ![Github Remote Repository Screenshot-4](./Practical1/Image4.png)
 
 ![Github Remote Repository Screenshot-5](./Practical1/Image5.png)
+
+### (2) Rebase
+
+- Rebase operation is performed to change the base of branch. Rebase is typically used to make Commit History Linear. We use `git rebase` command.
+- Interactive Rebasing is used to manipulate Commit history in more flexible way.
+
+- Try to Rebase feature Branch with main Branch
+
+```bash
+# Create feature branch
+git branch feature
+
+# Made some changes in -main- Branch and Staging all changes
+git add .
+
+# Commiting changes
+git commit -m "Some changes in Branch main"
+
+# Switch to feature branch
+git switch feature
+
+# Made some changes in -feature- Branch and Staging all changes
+git add .
+
+# Commiting changes
+git commit -m "Some changes in Branch feature"
+
+```
